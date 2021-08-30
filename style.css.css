@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("https://i2.wp.com/www.csscodelab.com/wp-content/uploads/2019/11/html-css-only-tranquil-fireflies-effect-on-background.png?fit=1054%2C634&ssl=1");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}
+.logo{
+    width: 50%;
+}
+.logo1{
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+}
+.logo2{
+    color: yellow;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar{
+    float: 1;
+    text-align: right;
+}
+.navbar ul li{
+    
+    float: left;
+    position: relative;
+    padding: 8px 40px;
+    list-style: none;
+    display: inline-block;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: yellow;
+}
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:tomato ;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+    display: no
+
+}
+.text-box{
+    width: 100%;
+    top: 40%;
+    position: absolute;
+    text-align: center;
+    color: thistle;
+}
+.text-box h1{
+    font-size: 40px;
+}
+.button a{ 
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(250, 6, 6);
+    color: rgb(43, 255, 0);
+    font-size: 13px;
+    padding: 12px 34px;
+    background: transparents;
+    cursor: pointer;
+    position: relative;
+}
+.button a:hover{
+    background: #f44336;
+    transition: 1s;
+    border:1px solid yellow;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px) {
+    .text-box h1{
+        font-size: 18px;
+    }
+    .text-box p{
+        font-size: 10px;
+        padding: 8px;
+    }
+    .navbar ul li{
+        display: block;
+        padding: 30px;
+    }
+    .navbar{
+        position: absolute;
+        background: red;
+        height: 100vh;
+        width: 200px;
+        top: 0%;
+        right: -200%;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navbar ul{
+        padding: 30px;
+    }
+    .logo1{
+        font-size:28px;
+    }
+    .logo2{
+        font-size: 15px;
+    }
+}
+
+/*students*/
+
+.students{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(252, 241, 198);
+}
+
+.past-background{
+    background-color: rgba(26, 24, 23, 0.747);
+    width: 88%;
+    height:28px;
+}
+.past-head{
+    width: 100%;
+    text-align: center;
+}
+.past-head h1{
+    color: salmon;
+    letter-spacing: 10mm;
+}
+.past-head p{
+    letter-spacing: 5mm;
+    color: slategray;
+}
+
+div.gallery {
+    margin: 3px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 150px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    font-weight: bold;
+    font-size: 12px;
+    
+  }
+
+
+@media(max-width: 700px){
+    .past-head{
+        font-size: 10px;
+    }
+    .past-head h1{
+        letter-spacing: 6mm;
+    }
+
+} 
+
+/*about us*/
+
+#sec3{
+background-image: linear-gradient(rgba(0, 60, 138, 0.521),rgba(0, 0, 0, 0.4)),url(https://ghana.oshassociation.org/wp-content/uploads/2018/04/about-us-1.png);
+    width: 100%;
+    height: 256px;
+    
+    
+}
+
+.about{
+    
+    text-align: center;
+    width: 100%;
+    height: 40px;
+}
+
+@media (max-width: 700px) {
+    .about{
+        font-size: 15px;
+    }   
+    .about-text{
+        font-size: 10px;
+    }
+    
+
+}
+
+
+/*conect us */
+
+#sec4{
+    background-image: linear-gradient(rgba(0, 60, 138, 0.521),rgba(0, 0, 0, 0.4)),
+    url(https://vdoctors.org/img/banner1.jpg);
+        width: 100%;
+        height: 256px;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+    }
+
+    .contact{
+    
+        text-align: center;
+        width: 100%;
+        height: 40px;
+    }
+
+    .contact a{
+        text-decoration: none;
+        color:lightsalmon ;
+    }
+    .contact a:hover{
+        color: limegreen;
+    }
+
+    @media (max-width: 700px) {
+        .contact{
+            font-size: 16px;
+        }   
+        .contact-text{
+            font-size: 14px;
+        }
+    }
